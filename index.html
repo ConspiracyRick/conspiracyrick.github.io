@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ConspiracyRick | Links & Support</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <!-- Alternative FontAwesome CDN for universal icon coverage -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    :root {
+      --bg-color: #0f172a;
+      --card-bg: #1e293b;
+      --card-hover: #334155;
+      --text-color: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent-color: #38bdf8;
+      --tip-bg: #10b981;
+      --tip-hover: #059669;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.25rem;
+    }
+
+    .profile {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+
+    .profile-avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      border: 3px solid var(--accent-color);
+      margin-bottom: 1rem;
+      object-fit: cover;
+    }
+
+    .profile-name {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+    }
+
+    .profile-bio {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .links {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+
+    .link-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: var(--card-bg);
+      color: var(--text-color);
+      text-decoration: none;
+      padding: 1rem 1.25rem;
+      border-radius: 12px;
+      transition: all 0.2s ease-in-out;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .link-card:hover {
+      background-color: var(--card-hover);
+      transform: translateY(-2px);
+      border-color: rgba(255, 255, 255, 0.15);
+    }
+
+    .link-info {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .link-info i {
+      font-size: 1.35rem;
+      width: 24px;
+      text-align: center;
+      color: var(--accent-color);
+    }
+
+    .link-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .link-title {
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    .link-subtitle {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 0.15rem;
+    }
+
+    .link-arrow {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+
+    /* Special Highlight for Tip/Support Button */
+    .tip-card {
+      background-color: var(--tip-bg);
+      border-color: transparent;
+    }
+
+    .tip-card:hover {
+      background-color: var(--tip-hover);
+    }
+
+    .tip-card .link-info i,
+    .tip-card .link-arrow {
+      color: #ffffff;
+    }
+
+    footer {
+      margin-top: 2rem;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- Profile Section -->
+    <div class="profile">
+      <img class="profile-avatar" src="https://github.com/ConspiracyRick.png" alt="ConspiracyRick Profile">
+      <h1 class="profile-name">ConspiracyRick</h1>
+      <p class="profile-bio">Developer & Content Creator</p>
+    </div>
+
+    <!-- Links List -->
+    <div class="links">
+
+      <!-- Support / Tip Button -->
+      <a href="https://github.com/sponsors/ConspiracyRick" class="link-card tip-card" target="_blank" rel="noopener">
+        <div class="link-info">
+          <i class="fa-solid fa-hand-holding-dollar"></i>
+          <div class="link-text">
+            <span class="link-title">Support ConspiracyRick with a tip</span>
+            <span class="link-subtitle" style="color: #e2e8f0;">Support my open-source projects & content</span>
+          </div>
+        </div>
+        <i class="fa-solid fa-chevron-right link-arrow"></i>
+      </a>
+
+      <!-- Discord -->
+      <a href="https://discord.gg/YOUR_DISCORD_INVITE" class="link-card" target="_blank" rel="noopener">
+        <div class="link-info">
+          <i class="fa-brands fa-discord"></i>
+          <div class="link-text">
+            <span class="link-title">Discord</span>
+            <span class="link-subtitle">Discord Server • Free to join</span>
+          </div>
+        </div>
+        <i class="fa-solid fa-chevron-right link-arrow"></i>
+      </a>
+
+      <!-- Project Pocket Mortys -->
+      <a href="https://github.com/ConspiracyRick/Project-Pocket-Mortys" class="link-card" target="_blank" rel="noopener">
+        <div class="link-info">
+          <i class="fa-solid fa-gamepad"></i>
+          <div class="link-text">
+            <span class="link-title">Project Pocket Mortys</span>
+            <span class="link-subtitle">Community server backend & API</span>
+          </div>
+        </div>
+        <i class="fa-solid fa-chevron-right link-arrow"></i>
+      </a>
+
+      <!-- YouTube Channel -->
+      <a href="https://youtube.com/@YOUR_CHANNEL" class="link-card" target="_blank" rel="noopener">
+        <div class="link-info">
+          <i class="fa-brands fa-youtube"></i>
+          <div class="link-text">
+            <span class="link-title">Youtube Channel</span>
+          </div>
+        </div>
+        <i class="fa-solid fa-chevron-right link-arrow"></i>
+      </a>
+
+      <!-- Gaming YouTube Channel -->
+      <a href="https://youtube.com/@YOUR_GAMING_CHANNEL" class="link-card" target="_blank" rel="noopener">
+        <div class="link-info">
+          <i class="fa-solid fa-headset"></i>
+          <div class="link-text">
+            <span class="link-title">Gaming Youtube Channel</span>
+          </div>
+        </div>
+        <i class="fa-solid fa-chevron-right link-arrow"></i>
+      </a>
+
+      <!-- GitHub -->
+      <a href="https://github.com/ConspiracyRick" class="link-card" target="_blank" rel="noopener">
+        <div class="link-info">
+          <i class="fa-brands fa-github"></i>
+          <div class="link-text">
+            <span class="link-title">GitHub</span>
+          </div>
+        </div>
+        <i class="fa-solid fa-chevron-right link-arrow"></i>
+      </a>
+
+      <!-- Twitch -->
+      <a href="https://twitch.tv/YOUR_TWITCH" class="link-card" target="_blank" rel="noopener">
+        <div class="link-info">
+          <i class="fa-brands fa-twitch"></i>
+          <div class="link-text">
+            <span class="link-title">Twitch</span>
+          </div>
+        </div>
+        <i class="fa-solid fa-chevron-right link-arrow"></i>
+      </a>
+
+      <!-- Kick -->
+      <a href="https://kick.com/YOUR_KICK" class="link-card" target="_blank" rel="noopener">
+        <div class="link-info">
+          <i class="fa-solid fa-play"></i>
+          <div class="link-text">
+            <span class="link-title">Kick</span>
+          </div>
+        </div>
+        <i class="fa-solid fa-chevron-right link-arrow"></i>
+      </a>
+
+      <!-- X / Twitter -->
+      <a href="https://x.com/YOUR_X_HANDLE" class="link-card" target="_blank" rel="noopener">
+        <div class="link-info">
+          <i class="fa-brands fa-x-twitter"></i>
+          <div class="link-text">
+            <span class="link-title">X</span>
+          </div>
+        </div>
+        <i class="fa-solid fa-chevron-right link-arrow"></i>
+      </a>
+
+      <!-- TikTok -->
+      <a href="https://tiktok.com/@YOUR_TIKTOK" class="link-card" target="_blank" rel="noopener">
+        <div class="link-info">
+          <i class="fa-brands fa-tiktok"></i>
+          <div class="link-text">
+            <span class="link-title">TikTok</span>
+          </div>
+        </div>
+        <i class="fa-solid fa-chevron-right link-arrow"></i>
+      </a>
+
+      <!-- Instagram -->
+      <a href="https://instagram.com/YOUR_INSTAGRAM" class="link-card" target="_blank" rel="noopener">
+        <div class="link-info">
+          <i class="fa-brands fa-instagram"></i>
+          <div class="link-text">
+            <span class="link-title">Instagram</span>
+          </div>
+        </div>
+        <i class="fa-solid fa-chevron-right link-arrow"></i>
+      </a>
+
+      <!-- Facebook -->
+      <a href="https://facebook.com/YOUR_FACEBOOK" class="link-card" target="_blank" rel="noopener">
+        <div class="link-info">
+          <i class="fa-brands fa-facebook"></i>
+          <div class="link-text">
+            <span class="link-title">Facebook</span>
+          </div>
+        </div>
+        <i class="fa-solid fa-chevron-right link-arrow"></i>
+      </a>
+
+      <!-- Reddit -->
+      <a href="https://reddit.com/user/YOUR_REDDIT" class="link-card" target="_blank" rel="noopener">
+        <div class="link-info">
+          <i class="fa-brands fa-reddit-alien"></i>
+          <div class="link-text">
+            <span class="link-title">Reddit</span>
+          </div>
+        </div>
+        <i class="fa-solid fa-chevron-right link-arrow"></i>
+      </a>
+
+      <!-- Rumble -->
+      <a href="https://rumble.com/c/YOUR_RUMBLE" class="link-card" target="_blank" rel="noopener">
+        <div class="link-info">
+          <i class="fa-solid fa-video"></i>
+          <div class="link-text">
+            <span class="link-title">Rumble</span>
+          </div>
+        </div>
+        <i class="fa-solid fa-chevron-right link-arrow"></i>
+      </a>
+
+    </div>
+
+    <footer>
+      <p>&copy; ConspiracyRick. All rights reserved.</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
